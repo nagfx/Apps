@@ -21,12 +21,17 @@ const WelcomePage = () => {
           Welcome to the Todo App
         </Typography>
       </Box>
-      <Card sx={{
-        background: 'linear-gradient(to right, #ffc3a0, #ffafbd)',
-        m: 2,
-        p: 2,
-        borderRadius: 2
-      }}>
+
+        <Card sx={{
+          background: 'linear-gradient(to right, #ffc3a0, #ffafbd)',
+          m: 2,
+          p: 2,
+          borderRadius: 2,
+          '&:hover': {
+            boxShadow: 3,
+          },
+        }}>
+              
         <CardContent>
           <Typography variant="body1">
             This application is built using the following stack:

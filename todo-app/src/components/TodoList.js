@@ -68,11 +68,13 @@ const TodoList = () => {
       <List>
         {todos.map((todo, index) => (
           <Card key={index} sx={{
-            background: 'linear-gradient(to right, #FFC0CB, #FF69B4)',
+            background: 'linear-gradient(to right, #FFC0CB, #FFC0CD)',
             m: 1,
             p: 2,
+            boxShadow: 1,
             borderRadius: 2,
             '&:hover': {
+              boxShadow: 3,
               background: 'linear-gradient(to right, #FF69B4, #FFC0CB)',
             }
           }}>
